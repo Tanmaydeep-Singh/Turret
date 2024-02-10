@@ -21,7 +21,7 @@ while True:
         #     first_person_index = label.index('bottle')
         #     first_person_bbox = bbox[first_person_index]       
         output_image = draw_bbox(frame, bbox, label, conf)
-        calculate_rotation_command(bbox, screen_width = frame.shape[1], screen_height = frame.shape[0])
+        calculate_rotation_command(bbox[0], screen_width = frame.shape[1], screen_height = frame.shape[0])
     else:
         # If no person is detected, keep showing the original frame
         output_image = frame
