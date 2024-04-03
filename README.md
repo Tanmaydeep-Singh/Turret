@@ -7,4 +7,5 @@
     Tailwind
     Python
     OpenCV
+    Typescript
     
